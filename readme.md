@@ -1,0 +1,32 @@
+# JSON-to-FORM (j2f)
+######Versión 1.1.0
+
+## Usage
+
+```html
+  <div id="app"></div>
+
+  <link rel="stylesheet" href="./font-awesome/4.7.0/css/font-awesome.css"./>
+  <link rel="stylesheet" href="./j2f/styles.css">
+```
+
+```javascript
+import createJsonForm from './j2f/RootForm.js';
+
+let elem = document.getElementById("app");
+let ui = {};
+let state = {};
+
+const myForm = createJsonForm(elem, ui, state);
+
+myForm.addEventListener('form-changed', e => {
+  console.log("Event: ", e);
+  let newState = {};
+  myForm.update(newState);
+});
+
+```
+By Rob DS
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
