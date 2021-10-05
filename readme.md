@@ -1,5 +1,5 @@
 # JSON-to-FORM (j2f)
-######Versión 1.1.0
+######Version 1.1.0
 
 ## Usage
 
